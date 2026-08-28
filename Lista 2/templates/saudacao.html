@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boas-Vindas</title>
+</head>
+<body>
+	<h2>Olá, {{ nome }}! Seja bem-vindo!</h2>
+	<p>
+		Mas o que te traz a esse fim de mundo? Existem 
+		<a href="{{ url_for('boas_vindas') }}">outros caminhos</a> além daqui...
+	</p>
+</body>
+</html>
