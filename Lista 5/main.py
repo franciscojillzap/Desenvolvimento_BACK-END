@@ -1,9 +1,11 @@
 from flask import Flask
-from routers.calculadora import rotas_calculadora
+
+# Importa do arquivo "calculadora.py", dentro da pasta "routes", a função "rotas_calc"
+from routes.calculadora import rotas_calc
 
 app = Flask(__name__)
 
-rotas_calculadora(app)
+rotas_calc(app)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+	app.run(debug=True)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora - E o resultado é...</title>
+</head>
+<body>
+	{% if soma %}
+		<h2>Resultado da {{ soma.operacao }}:</h2>
+		<h1>{{ soma.numero1 }} + {{ soma.numero2 }} = {{ soma.resultado }}</h1>
+	{% endif %}
+
+	{% if multiplicacao %}
+		<h2>Resultado da {{ multiplicacao.operacao }}:</h2>
+		<h1>{{ multiplicacao.numero1 }} + {{ multiplicacao.numero2 }} = {{ multiplicacao.resultado }}</h1>
+	{% endif %}
+</body>
+</html>

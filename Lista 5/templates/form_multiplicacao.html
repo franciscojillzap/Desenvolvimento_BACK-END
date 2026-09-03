@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora - Vamos multiplicar?</title>
+</head>
+<body>
+	<h2>Operação Escolhida: MULTIPLICAÇÃO</h2>
+
+	<form action="{{ url_for('executar') }}" method="POST">
+		<div>
+			<label>Número 1:</label>
+			<input type="number" name="n1" required>
+		</div>
+
+		<div>
+			<label>Número 2:</label>
+			<input type="number" name="n2" required>
+		</div>
+
+		<button type="submit">Calcular</button>
+	</form>
+</body>
+</html>
